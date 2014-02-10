@@ -1,0 +1,18 @@
+{
+  "name": "dom-transform",
+  "version": "0.0.1",
+  "testling": {
+    "files": "tests/*.js",
+    "harness" : "mocha",
+    "browsers": [
+      "ie/10..latest",
+      "chrome/31..latest",
+      "firefox/26..latest",
+      "safari/6..latest",
+      "opera/19.0..latest",
+      "iphone/6..latest",
+      "ipad/6..latest",
+      "android-browser/3..latest"
+    ]
+  }
+}
