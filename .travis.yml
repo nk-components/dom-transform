@@ -7,15 +7,27 @@ env:
   - DEBUG=component-test*
   - PATH=$PATH:./node_modules/component/bin
   matrix:
-    - BROWSER="chrome 32 Mac 10.9"
-    - BROWSER="chrome 32 Windows 2012"
-    - BROWSER="firefox 26 Windows 2012"
+    - BROWSER="chrome 31 OS X 10.9"
+    - BROWSER="chrome 30 OS X 10.9"
+    - BROWSER="chrome 31 Windows 8.1"
+    - BROWSER="chrome 30 Windows 8.1"
+
+    - BROWSER="firefox 26 OS X 10.9"
+    - BROWSER="firefox 25 OS X 10.9"
+    - BROWSER="firefox 26 Windows 8.1"
+    - BROWSER="firefox 25 Windows 8.1"
+
     - BROWSER="safari 7 Mac 10.9"
     - BROWSER="safari 6 Mac 10.8"
-    - BROWSER="internet explorer 11 Windows 2012 R2"
-    - BROWSER="internet explorer 10 Windows 2012"
+
+    - BROWSER="internet explorer 11 Windows 8.1"
+    - BROWSER="internet explorer 10 Windows 8"
+
+    - BROWSER="opera 12 Windows 7"
+
     - BROWSER="iphone 7 Mac 10.9"
-    - BROWSER="iphone 6.1 Mac 10.8"
+    - BROWSER="iphone 6 Mac 10.8"
+
     - BROWSER="android 4.0 Linux"
 cache:
   directories:
