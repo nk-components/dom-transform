@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- '0.10'
+env:
+  global:
+  - secure: OnCPom4CXmu7D+Hv7c1EAEuSNIb0Khh1uLvmqGCVJ4GzGerNAhuFU7BVI7mJAxwob8gBQk+y6kH67lGI1QDToHGabWoiFUVZZu/33eF9bayaBZoffJFCQqXu/sw38D8tqHCTTCaSNXUnT8rY1kvV5wLqyIR7IJ6Kxh02WPqSvNQ=
+  - DEBUG=component-test*
+  - PATH=$PATH:./node_modules/component/bin
+  matrix:
+    - BROWSER="chrome 32 Mac 10.9"
+    - BROWSER="chrome 32 Windows 2012"
+    - BROWSER="firefox 26 Windows 2012"
+    - BROWSER="safari 7 Mac 10.9"
+    - BROWSER="safari 6 Mac 10.8"
+    - BROWSER="internet explorer 11 Windows 2012 R2"
+    - BROWSER="internet explorer 10 Windows 2012"
+    - BROWSER="iphone 7 Mac 10.9"
+    - BROWSER="iphone 6.1 Mac 10.8"
+    - BROWSER="android 4.0 Linux"
+cache:
+  directories:
+  - node_modules

@@ -9,12 +9,12 @@ clean:
 	rm -fr build components
 
 sauce: build
-	@component test sauce
+	@component-test sauce
 
 phantom: build
-	@component test phantom
+	@component-test phantom
 
 browser: build
-	@component test browser
+	@component-test browser
 
 .PHONY: clean
