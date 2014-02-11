@@ -1,4 +1,4 @@
-[![browser support](https://ci.testling.com/nk-components/dom-transform.png)](https://ci.testling.com/nk-components/dom-transform)
+[![Build Status](https://travis-ci.org/nk-components/dom-transform.png?branch=master)](https://travis-ci.org/nk-components/dom-transform)
 
 # dom-transform
 
