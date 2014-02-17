@@ -20,21 +20,30 @@ function transform(target, properties) {
   var output = [];
   var i;
   var name;
+  var propValue;
 
   for (i in properties) {
+    propValue = properties[i];
+
     // replace shortcut with its transform value.
     name = _has.call(shortcuts, i)
       ? name = shortcuts[i]
       : name = i;
 
     if (_has.call(fns, name)) {
-      output.push(fns[name](numToString(properties[i])));
-    } else {
-      console.warn(name, 'is not a valid property');
+      output.push(fns[name](numToString(propValue)));
+      continue;
     }
+
+    if (name === 'origin') {
+      target.style[prefix('transform-origin')] = propValue;
+      continue;
+    }
+
+    console.warn(name, 'is not a valid property');
   }
 
-  style(target, output.join(' '));
+  target.style[prop] = output.join(' ');
 }
 
 
@@ -52,12 +61,8 @@ function none(target) {
 }
 
 
-function style(target, value) {
-  if (!value) {
-    return target.style[prop];
-  }
-
-  target.style[prop] = value;
+function style(target) {
+  return target.style[prop];
 }
 
 
