@@ -3,6 +3,7 @@
 var trim = require('trim');
 var prefix = require('prefix');
 var prop = prefix('transform');
+var propTransOrigin = prefix('transform-origin');
 var fns = require('./lib/properties');
 
 var _has = Object.prototype.hasOwnProperty;
@@ -36,7 +37,7 @@ function transform(target, properties) {
     }
 
     if (name === 'origin') {
-      target.style[prefix('transform-origin')] = propValue;
+      target.style[propTransOrigin] = propValue;
       continue;
     }
 
@@ -58,6 +59,14 @@ exports.none = none;
 
 function none(target) {
   target.style[prop] = '';
+  target.style[propTransOrigin] = '';
+}
+
+
+exports.isSupported = isSupported;
+
+function isSupported() {
+  return prop.length > 0;
 }
 
 
