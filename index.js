@@ -3,7 +3,7 @@
 var trim = require('trim');
 var prefix = require('prefix');
 var prop = prefix('transform');
-var propTransOrigin = prefix('transform-origin');
+var propTransOrigin = prefix('transformOrigin');
 var fns = require('./lib/properties');
 
 var _has = Object.prototype.hasOwnProperty;
