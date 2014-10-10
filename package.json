@@ -1,8 +1,25 @@
 {
   "name": "dom-transform",
   "version": "0.0.4",
+  "description": "Applies CSS transform properties on an element",
   "scripts": {
     "test": "make sauce"
+  },
+  "keywords": [
+    "css",
+    "transform",
+    "animation"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Antoine Lehurt",
+    "email": "hello@kewah.com",
+    "url": "http://kewah.com",
+    "twitter": "https://twitter.com/kewah"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nk-components/dom-transform"
   },
   "devDependencies": {
     "component": "*",
