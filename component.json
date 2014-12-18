@@ -12,9 +12,6 @@
     "pgherveou/prefix": "*",
     "component/trim": "*"
   },
-  "development": {
-    "component/assert": "*"
-  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [

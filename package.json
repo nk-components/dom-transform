@@ -2,8 +2,11 @@
   "name": "dom-transform",
   "version": "0.0.4",
   "description": "Applies CSS transform properties on an element",
+  "main": "index.js",
   "scripts": {
-    "test": "make sauce"
+    "test": "npm run build && mocha-phantomjs ./test/runner.html",
+    "build": "browserify -d -r assert -r ./index.js:dom-transform > bundle.js",
+    "watch": "onchange 'index.js' 'test/index.js' -- npm test"
   },
   "keywords": [
     "css",
@@ -22,7 +25,14 @@
     "url": "https://github.com/nk-components/dom-transform"
   },
   "devDependencies": {
-    "component": "*",
-    "component-test": "*"
+    "browserify": "^7.0.2",
+    "mocha": "^2.0.1",
+    "mocha-phantomjs": "^3.5.2",
+    "phantomjs": "^1.9.12"
+  },
+  "dependencies": {
+    "onchange": "0.0.2",
+    "prefix": "^0.2.1",
+    "trim": "0.0.1"
   }
 }
