@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run build && mocha-phantomjs ./test/runner.html",
     "build": "browserify -d -r assert -r ./index.js:dom-transform > bundle.js",
-    "watch": "onchange 'index.js' 'test/index.js' -- npm test"
+    "watch": "onchange 'index.js' 'test/index.js' -- npm test",
+    "demo": "npm run build && open demo.html"
   },
   "keywords": [
     "css",
