@@ -1,4 +1,4 @@
-# dom-transform [![Build Status](https://travis-ci.org/nk-components/dom-transform.png?branch=master)](https://travis-ci.org/nk-components/dom-transform)
+# dom-transform [![Build Status](https://travis-ci.org/nk-components/dom-transform.svg?branch=master)](https://travis-ci.org/nk-components/dom-transform)
 
 Applies CSS transform properties on an element.
 
