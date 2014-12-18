@@ -4,6 +4,12 @@ Applies CSS transform properties on an element.
 
 ## Installation
 
+With [npm](http://npmjs.org) do:
+
+```bash
+$ npm install dom-transform --save
+```
+
 Install with [component(1)](http://component.io):
 
 ```
