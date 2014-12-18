@@ -1,6 +1,6 @@
 {
   "name": "dom-transform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Applies CSS transform properties on an element",
   "main": "index.js",
   "scripts": {
