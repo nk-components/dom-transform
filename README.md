@@ -20,9 +20,31 @@ $ component install nk-components/dom-transform
 
 ```js
 var transform = require('dom-transform');
-transform(document.querySelector('div'), {
+var el = document.querySelector('div');
+
+transform(el, {
   x: 12,
   y: 10
+});
+
+console.log(transform.get(el, 'transform'))
+// > 'translateX(12px) translateY(10px)'
+
+console.log(transform.get(el, 'transform'))
+// > {
+//  'transform': 'translateX(12px) translateY(10px)',
+//  'transformOrigin': ''
+// }
+
+transform.reset(el);
+// > {
+//  'transform': '',
+//  'transformOrigin': ''
+// }
+
+transform(el, {
+  translate3d: [10, 10, 10],
+  origin: [0, 0]
 });
 ```
 

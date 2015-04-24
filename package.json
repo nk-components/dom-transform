@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run build && mocha-phantomjs ./test/runner.html",
     "build": "browserify -d -r assert -r ./index.js:dom-transform > bundle.js",
-    "watch": "npm test && onchange 'index.js' 'test/index.js' -- npm test",
+    "watch": "npm test && onchange '**/*.js' -- npm test",
     "demo": "npm run build && open demo.html"
   },
   "keywords": [
@@ -33,7 +33,9 @@
     "phantomjs": "^1.9.15"
   },
   "dependencies": {
+    "is-array": "^1.0.1",
     "prefix": "^0.2.1",
+    "to-string": "^0.2.0",
     "trim": "0.0.1"
   }
 }
